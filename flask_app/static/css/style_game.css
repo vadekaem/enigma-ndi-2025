@@ -75,16 +75,20 @@ body {
 }
 
 
-#final-image a img {
-    width: 200px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px #444;
-    animation: zoomIn 2s forwards;
-    cursor: pointer;
-    pointer-events: auto;
+/* ================================
+   CENTRAGE DÉFINITIF DE LA COUPE
+================================ */
+
+#final-image {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 }
 
-#final-image a img {
+#final-image img {
     width: 200px;
     max-width: 80vw;
     height: auto;
@@ -92,9 +96,7 @@ body {
     box-shadow: 0 0 20px #444;
     animation: zoomIn 2s forwards;
     cursor: pointer;
-    display: block;
 }
-
 
 #exit-button {
     position: fixed;
