@@ -120,3 +120,19 @@ body {
 #exit-button:hover {
     background-color: #ab441b;
 }
+
+@media (max-width: 768px) {
+    #final-image {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        width: 100%;
+        justify-content: center;
+    }
+
+    #final-image a img {
+        width: 150px; /* un peu plus petit pour mobile */
+        margin: 0 auto;
+        display: block;
+    }
+}
