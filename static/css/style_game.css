@@ -79,11 +79,9 @@ body {
 }
 
 #final-image {
-    width: auto;
-    height: auto;
     position: fixed;
-    top: 70%;
-    left: 55%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%) scale(1);
     display: flex;
     justify-content: center;
@@ -91,13 +89,17 @@ body {
     z-index: 1000;
 }
 
+/* Image de la coupe */
 #final-image a img {
-    width: 200px;  /* taille initiale */
+    width: 200px;
+    max-width: 80vw;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 0 20px #444;
-    animation: zoomIn 2s forwards; /* applique le zoom */
-    cursor: pointer; /* indique que c'est cliquable */
+    animation: zoomIn 2s forwards;
+    cursor: pointer;
 }
+
 
 #exit-button {
     position: fixed;
