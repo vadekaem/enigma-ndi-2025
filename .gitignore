@@ -2,3 +2,4 @@ __pycache__
 .venv
 venv
 flask_app/__pycache__
+.vercel

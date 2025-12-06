@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="{{ url_for('static', filename='../static/images/favicon.ico') }}">
+  <meta charset="UTF-8">
+  <title>PROJET NIRD</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="slider-wrapper">
+  <div class="slider" id="slider">
+
+    <div class="slide gradient1 active">
+      <img src="{{ url_for('static', filename='images/logo+text512px.png') }}" alt="Logo NIRD" class="slide-logo">
+    </div>
+
+    <div class="slide gradient2">
+      <div class="slide-text">
+        "Protocole de reconditionnement de matériel informatique en fin de vie"
+      </div>
+    </div>
+
+    <div class="slide gradient3">
+      <div class="slide-text">
+        "Linux, solution de logiciel libre et léger, pour redonner vie à d'ancien ordinateurs"
+      </div>
+      <a href="https://www.linux.org" class="slide-link" target="_blank" rel="noopener noreferrer">
+        Accéder au site Linux
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="nav left" id="prev">&#10094;</div>
+<div class="nav right" id="next">&#10095;</div>
+
+
+<div class="overlay"></div>
+
+<h1 class="title">PROJET NIRD</h1>
+
+<!-- ICÔNES EN IMAGES -->
+<div class="grid-container">
+
+  <a href="/LINUX" class="card">
+    <img src="../static/images/sectionLinux.png">
+    <span>LINUX</span>
+  </a>
+
+  <a href="/MEMORY" class="card card-main">
+    <img src="../static/images/sectionMiniGames.png">
+    <span>MEMORY</span>
+  </a>
+
+  <a href="/PARTI-PRIS" class="card">
+    <img src="../static/images/sectionPartiPris.png">
+    <span>PARTI-PRIS</span>
+  </a>
+
+</div>
+
+
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
