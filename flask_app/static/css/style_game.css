@@ -80,25 +80,23 @@ body {
 
 #final-image {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    inset: 0;                /* ✅ bloque tous les côtés */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* ✅ centrage horizontal garanti */
+    align-items: center;     /* ✅ centrage vertical garanti */
     z-index: 1000;
+    pointer-events: none;   /* évite les décalages involontaires */
 }
 
-/* Image de la coupe */
 #final-image a img {
     width: 200px;
-    max-width: 80vw;
-    height: auto;
     border-radius: 10px;
     box-shadow: 0 0 20px #444;
     animation: zoomIn 2s forwards;
     cursor: pointer;
+    pointer-events: auto;   /* rend l’image cliquable */
 }
+
 
 
 #exit-button {
