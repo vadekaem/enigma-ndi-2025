@@ -92,9 +92,9 @@ function showFinalImage() {
     link.href = "/FRISE";
 
     const finalImage = document.createElement("img");
-    finalImage.src = "/static/images/trophy.jpg";
+    finalImage.src = "/static/images/trophy.png";
 
-    // ✅ FORÇAGE TAILLE MOBILE
+
     finalImage.style.width = "200px";
     finalImage.style.maxWidth = "80vw";
     finalImage.style.height = "auto";
