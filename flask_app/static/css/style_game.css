@@ -75,14 +75,13 @@ body {
 }
 
 
-#final-image {
-    position: fixed;
-    inset: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    pointer-events: none;
+#final-image a img {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #444;
+    animation: zoomIn 2s forwards;
+    cursor: pointer;
+    pointer-events: auto;
 }
 
 #final-image a img {
@@ -93,10 +92,8 @@ body {
     box-shadow: 0 0 20px #444;
     animation: zoomIn 2s forwards;
     cursor: pointer;
-    pointer-events: auto;
+    display: block;
 }
-
-
 
 
 #exit-button {
